@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="hurray.css" />
+  </head>
+  <body>
+    <div class="mainWrapper">
+      <canvas id="canvas"></canvas>
+      <div class="hurrayImages">
+        <img class="stars" src="images/stars.png" alt="" />
+        <img class="trophy" src="images/trophy.png" alt="" />
+      </div>
+      <div class="winningText">
+        <h1 class="hurraywintext">Hurray!!</h1>
+        <h2 class="youwintext">You won the game</h2>
+      </div>
+      <div class="hurrayplayagainbtn">
+        <button onclick="navigateToHomepage()" class="secondplayagain">
+          Play again
+        </button>
+      </div>
+    </div>
+    <div class="btn-div">
+      <button onclick="showRules()" class="btn-rule">RULES</button>
+    </div>
+    <div id="rulesModal">
+      <div class="modal-content">
+        <h2>Game Rules</h2>
+        <br />
+        <span class="close-btn" onclick="closeRulesModal()">&times;</span>
+        <p>🟨Rock beats scissors, scissors beat paper, and paper beats rock.</p>
+        <br />
+        <p>
+          🟨Agree ahead of time whether you’ll count off “rock, paper, scissors,
+          shoot” or just “rock, paper, scissors.”
+        </p>
+        <br />
+        <p>
+          🟨Use rock, paper, scissors to settle minor decisions or simply play
+          to pass the time.
+        </p>
+        <br />
+        <p>
+          🟨If both players lay down the same hand, each player lays down
+          another hand.
+        </p>
+        <br />
+      </div>
+    </div>
+
+    <script>
+      function navigateToHomepage() {
+        // Set the homepage URL
+        var homepageUrl = "index.html"; // Replace with your homepage URL
+
+        // Navigate to the homepage
+        window.location.href = homepageUrl;
+      }
+
+      function showRules() {
+        document.getElementById("rulesModal").style.display = "flex";
+      }
+
+      function closeRulesModal() {
+        document.getElementById("rulesModal").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCK | PAPER | SCISSORS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="score-con">
+      <div class="logo">
+        <p>ROCK</p>
+        <p>PAPER</p>
+        <p>SCISSORS</p>
+      </div>
+      <div class="comscore">
+        <p>Computer Score</p>
+        <span id="cscore">0</span>
+      </div>
+      <div class="score">
+        <p>Your Score</p>
+        <span id="score">0</span>
+      </div>
+    </div>
+
+    <div class="game-con">
+      <div class="info">
+        <p class="user">You Picked</p>
+        <p class="machine">Computer Picked</p>
+      </div>
+      <div class="option">
+        <div class="bgLines">
+          <div class="bgLine1"></div>
+          <div class="bgLine2"></div>
+          <div class="bgLine3"></div>
+        </div>
+
+        <div class="sci-con con">
+          <div class="item">
+            <img src="images/scissors.png" alt="" />
+          </div>
+        </div>
+        <div class="rock-con con">
+          <div class="item">
+            <img src="images/rock.png" alt="" />
+          </div>
+        </div>
+        <div class="paper-con con">
+          <div class="item">
+            <img src="images/paper.png" alt="" />
+          </div>
+        </div>
+        <!-- COMPUTER SELECTION SECTION -->
+        <div class="sci-con computer">
+          <div class="item">
+            <img src="images/scissors.png" alt="" />
+          </div>
+        </div>
+        <div class="rock-con computer">
+          <div class="item">
+            <img src="images/rock.png" alt="" />
+          </div>
+        </div>
+        <div class="paper-con computer">
+          <div class="item">
+            <img src="images/paper.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="btn-div">
+        <button onclick="showRules()" class="btn-rule">RULES</button>
+        <button class="nextbtn">NEXT</button>
+      </div>
+      <!-- <div class="rule-modal">
+        <div class="rule img">
+          <div>
+            <p></p>
+            <button></button>
+          </div>
+          <img src="" alt="" />
+        </div>
+      </div> -->
+      <div class="win-modal">
+        <h1 class="winner">YOU WIN</h1>
+        <button class="play">Play Again</button>
+      </div>
+    </div>
+
+    <div id="rulesModal">
+      <div class="modal-content">
+        <h2>Game Rules</h2>
+        <br />
+        <span class="close-btn" onclick="closeRulesModal()">&times;</span>
+        <p>🟨Rock beats scissors, scissors beat paper, and paper beats rock.</p>
+        <br />
+        <p>
+          🟨Agree ahead of time whether you’ll count off “rock, paper, scissors,
+          shoot” or just “rock, paper, scissors.”
+        </p>
+        <br />
+        <p>
+          🟨Use rock, paper, scissors to settle minor decisions or simply play
+          to pass the time.
+        </p>
+        <br />
+        <p>
+          🟨If both players lay down the same hand, each player lays down
+          another hand.
+        </p>
+        <br />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
